@@ -1,0 +1,26 @@
+﻿<vm:MainViewModel 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Sinon"
+    xmlns:vm="clr-namespace:Sinon.ViewModels">
+
+    <vm:MainViewModel.NetworkName>Network Name</vm:MainViewModel.NetworkName>
+    
+    <vm:MainViewModel.Sightings>
+        <vm:SightingViewModel Location="design one" Timestamp="14:02"/>
+        <vm:SightingViewModel Location="design two" Timestamp="15:01" />
+        <vm:SightingViewModel Location="design three" Timestamp="15:03"/>
+        <vm:SightingViewModel Location="design four" Timestamp="16:02"/>
+        <vm:SightingViewModel Location="design five" Timestamp="17:00"/>
+        <vm:SightingViewModel Location="design six" Timestamp="17:31"/>
+    </vm:MainViewModel.Sightings>
+
+    <vm:MainViewModel.Stations>
+        <vm:StationViewModel StationName="Test 1"/>
+        <vm:StationViewModel StationName="Test 2"/>
+        <vm:StationViewModel StationName="Test 3"/>
+        <vm:StationViewModel StationName="Test 4"/>
+        <vm:StationViewModel StationName="Test 5"/>
+    </vm:MainViewModel.Stations>
+
+    </vm:MainViewModel>

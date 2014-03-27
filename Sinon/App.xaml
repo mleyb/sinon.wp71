@@ -1,0 +1,25 @@
+﻿<Application x:Class="Sinon.App" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone" 
+             xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone" 
+             xmlns:local="clr-namespace:Sinon" 
+             xmlns:services="clr-namespace:Sinon.Services"
+             xmlns:analytics="clr-namespace:Sinon.Analytics">
+  <!--Application Resources-->
+  <Application.Resources>
+  </Application.Resources>
+  <Application.ApplicationLifetimeObjects>
+    <!--Required object that handles lifetime events for the application-->
+    <shell:PhoneApplicationService 
+        Launching="Application_Launching" 
+        Closing="Application_Closing" 
+        Activated="Application_Activated" 
+        Deactivated="Application_Deactivated" />
+    <!-- Config settings service -->
+    <services:ConfigurationSettingsService />
+    <services:AzureMobileService />
+    <analytics:GoogleAnalyticsService 
+        WebPropertyId="UA-12345-6" />
+  </Application.ApplicationLifetimeObjects>
+</Application>
